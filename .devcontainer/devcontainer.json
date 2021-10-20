@@ -4,15 +4,14 @@
 	"name": "BMC64",
 	"runArgs": ["--init"],
 	"remoteEnv": {
-		"ARM_VERSION": "10.3-2021.07",
-		"ARM_HOME": "/opt/gcc-arm-10.3-2021.07-x86_64-arm-none-eabi",
-		"PATH": "${containerEnv:PATH}:/opt/gcc-arm-10.3-2021.07-x86_64-arm-none-eabi/bin"
+		"ARM_VERSION": "9.2.1",
+		"ARM_HOME": "/opt/gcc-arm-none-eabi-9-2019-q4-major",
+		"PATH": "${containerEnv:PATH}:/opt/gcc-arm-none-eabi-9-2019-q4-major/bin:/opt/aclocal-1.15/bin"
 	},
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
-			"VARIANT": "bullseye",
-			"ARM_TOOL_VERSION": "10.3-2021.07"
+			"VARIANT": "bullseye"
 		}
 	},
 
